@@ -83,6 +83,6 @@ Evaluation Metrics:
 Mean Squared Error (MSE) for regression-based models.
 Accuracy or R² score for predictive performance.
 
-7. Conclusions
+7. Conclusion
    
 The project demonstrates the feasibility of using historical stock data for trend analysis and prediction. The integration of machine learning models with interactive visualizations through Streamlit enables efficient and user-friendly exploration of stock trends. While the current model provides a basic understanding of stock movements, further improvements in model sophistication can lead to more accurate predictions.

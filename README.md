@@ -17,12 +17,12 @@ Tools like Yahoo Finance and libraries such as yfinance and pandas have enabled 
 Similar projects have been developed using libraries like TensorFlow and PyTorch, providing baseline methodologies for comparison.
 
 4. Methodology
-
+   
 The project workflow involves the following steps:
 
 Data Collection:
 
-Historical stock data (2010–2019) is retrieved using APIs like yfinance.
+Historical stock data (2010–2019) is retrieved using pandas_datareader.
 Data includes Open, High, Low, Close, Volume, and Adjusted Close values.
 
 Preprocessing:
@@ -32,6 +32,7 @@ Calculation of technical indicators like moving averages (100 days).
 
 Visualization:
 
+Using matplotlib.pyplot, the following plots are created:
 Closing Price vs. Time Chart.
 Closing Price with 100-day Moving Average Chart.
 
@@ -43,3 +44,45 @@ Train-test split to evaluate model performance.
 Streamlit Integration:
 
 Building an interactive interface to input stock tickers, view data tables, visualizations, and predictions.
+
+5. Hardware/Software Required
+   
+Software:
+
+Python 3.x
+
+Libraries:
+
+numpy: For numerical computations.
+pandas: For data manipulation and analysis.
+matplotlib.pyplot: For creating visualizations.
+pandas_datareader: For retrieving financial data.
+Streamlit: For web application development.
+
+Use of machine learning techniques (e.g., Linear Regression or LSTM) for forecasting future stock prices.
+Train-test split to evaluate model performance.
+
+Streamlit Integration:
+
+Building an interactive interface to input stock tickers, view data tables, visualizations, and predictions.
+
+6. Experimental Results
+   
+Data Representation:
+
+The dataset (2010–2019) is displayed in tabular format, showing descriptive statistics such as mean, standard deviation, and range for each attribute.
+
+Visualizations:
+
+Closing Price vs. Time: A simple line chart created using matplotlib.pyplot to show trends over time.
+Closing Price with Moving Average (100 days): Created using matplotlib.pyplot to highlight smoothed trends, reducing short-term fluctuations.
+Predictions vs. Actual Values: Evaluates model performance using the prediction model outputs.
+
+Evaluation Metrics:
+
+Mean Squared Error (MSE) for regression-based models.
+Accuracy or R² score for predictive performance.
+
+7. Conclusions
+   
+The project demonstrates the feasibility of using historical stock data for trend analysis and prediction. The integration of machine learning models with interactive visualizations through Streamlit enables efficient and user-friendly exploration of stock trends. While the current model provides a basic understanding of stock movements, further improvements in model sophistication can lead to more accurate predictions.
